@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Amity.Online2.Module2_FunctionalTesting">
+        <methods>
+          <include name="GenerateReport"/>
+          <include name="LaunchBrowser"/>
+          <include name="BCAwithspecializationinDataAnalytics"/>
+          <include name="BachelorofBusinessAdministration"/>
+          <include name="CloseBrowser"/>
+          <include name="BachelorofComputerApplications"/>
+          <include name="CloseReport"/>
+        </methods>
+      </class> <!-- Amity.Online2.Module2_FunctionalTesting -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
