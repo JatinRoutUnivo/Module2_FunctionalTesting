@@ -160,7 +160,7 @@ public class Module2_FunctionalTesting {
 			JavascriptExecutor js=((JavascriptExecutor)driver);
 			js.executeScript("arguments[0].click();", MCANormal);
 			Thread.sleep(3000);
-			String ExpMCANormal = "https://amityonline.com/master-of-computer-applications-onlin";
+			String ExpMCANormal = "https://amityonline.com/master-of-computer-applications-online";
 			if(driver.getCurrentUrl().equals(ExpMCANormal)) {
 				test.log(Status.PASS, "MasterofComputerApplications_Program url is verified");
 				System.out.println("MasterofComputerApplications_Program url is verified");
