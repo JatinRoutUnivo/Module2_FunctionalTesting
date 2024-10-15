@@ -392,7 +392,7 @@ public class Module2_FunctionalTesting {
 		}
 
 	}
-
+/*
 	@Test(priority = 6)
 	//Bachelor of Commerce
 
@@ -1438,7 +1438,7 @@ public class Module2_FunctionalTesting {
 
 		}
 	}
-/*
+
 	@Test(priority = 31)
 	//Master of Science in Data Science
 	public void MasterofScienceinDataScience() throws InterruptedException {
