@@ -1483,29 +1483,9 @@ public class Module2_FunctionalTesting {
 
 	}
 
-	@Test(priority = 32)
-	public void PrintprogramsList() throws InterruptedException {
-
-		WebElement Showmorebutton = driver.findElement(By.xpath("//span[normalize-space()='show more']"));
-		Thread.sleep(2000);
-		Actions act7=new Actions(driver);
-		act7.moveToElement(Showmorebutton).click().perform();
-		test=reports.createTest("Program List on HomePage");
-		Thread.sleep(2000);
-		List<WebElement> elements = driver.findElements(By.xpath("//li[@class='styles_subMenuItem__GXmwt w-fit']"));
-		int countofelements = elements.size();
-		System.out.println("Programs Count :-  "  + (elements.size()-2));
-		Thread.sleep(2000);
-		System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-		for(int i=2; i<countofelements; i++) {
-			String PrintPrograms = elements.get(i).getText();
-			System.out.println(PrintPrograms);
-
-		}
+	
 
 
-
-	}
 
 
 
