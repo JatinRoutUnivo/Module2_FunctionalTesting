@@ -45,7 +45,7 @@ public class Module2_FunctionalTesting {
 	@FindBy(xpath = "//a[normalize-space()='Master of Computer Applications']")  //Master of Computer Applications
 	WebElement MCANormal;
 
-	@FindBy(xpath = "//a[normalize-space()='MCA with specialization in Blockchai']")  //MCA with specialization in Blockchain
+	@FindBy(xpath = "//a[normalize-space()='MCA with specialization in Blockchain']")  //MCA with specialization in Blockchain
 	WebElement MCAwithspecializationinBlockchain;
 
 	@FindBy(xpath = "//a[normalize-space()='MCA with specialization in ML & Al']")  //MCA with specialization in ML & Al
@@ -144,7 +144,7 @@ public class Module2_FunctionalTesting {
 
 	}
 
-	
+
 	//-------------------------------------------------------PG Programs----------------------------------------------------------------------------------------
 
 
@@ -863,6 +863,7 @@ public class Module2_FunctionalTesting {
 
 	}
 
+
 	@Test(priority = 32)
 	public void PrintprogramsList() throws InterruptedException {
 
@@ -882,6 +883,7 @@ public class Module2_FunctionalTesting {
 			System.out.println(PrintPrograms);
 
 		}
+
 
 
 
