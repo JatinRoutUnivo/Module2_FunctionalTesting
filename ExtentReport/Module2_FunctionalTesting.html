@@ -39,6 +39,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -48,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>15-10-2024 00:46</span>
+			<span class='label blue darken-3 suite-start-time'>15-10-2024 18:15</span>
 			</a>
 		</ul>
 	</div>
@@ -64,6 +65,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -107,12 +109,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>32</span> tests passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$88%'>
+                    <span class='strong'>16</span> tests passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> tests failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
+                    2</span> tests failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -133,17 +135,17 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>BachelorofComputerApplications_Program</span>
-						<span class='test-time'>15-10-2024 00:46</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>MasterofComputerApplications_Program</span>
+						<span class='test-time'>15-10-2024 18:15</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:46</span>
-	<span class='label end-time'>15-10-2024 00:46</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.039</span>
+	<span class='label start-time'>15-10-2024 18:15</span>
+	<span class='label end-time'>15-10-2024 18:15</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 04.185</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -155,30 +157,76 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:46:20 AM</td>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>6:15:44 PM</td>
 				<td class='step-details'>
-						BachelorofComputerApplications_Program url is verified
+						MasterofComputerApplications_Program url is not verified
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>6:15:44 PM</td>
+				<td class='step-details'>
+						An Assertion error occurred: expected [true] but found [false]
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>6:15:45 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: Assertion error occurred: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at Amity.Online2.Module2_FunctionalTesting.MasterofComputerApplications(Module2_FunctionalTesting.java:188)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
 
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\eclipse-workspace\Online2\Screenshot\MasterofComputerApplications_20241015181545.png' src='C:\Users\admin\eclipse-workspace\Online2\Screenshot\MasterofComputerApplications_20241015181545.png'></li>
+							</ul>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>BCAwithspecializationinCloudandSecurity_Program</span>
-						<span class='test-time'>15-10-2024 00:46</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>MCAwithspecializationinBlockchain_Program</span>
+						<span class='test-time'>15-10-2024 18:15</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:46</span>
-	<span class='label end-time'>15-10-2024 00:46</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.146</span>
+	<span class='label start-time'>15-10-2024 18:15</span>
+	<span class='label end-time'>15-10-2024 18:15</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.559</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -190,520 +238,85 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:46:30 AM</td>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>6:15:47 PM</td>
 				<td class='step-details'>
-						BCAwithspecializationinCloudandSecurity_Program url is verified
+						An unexpected error occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='MCA with specialization in Blockchai']"}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f8e661ffe76151905af08ae56e740e8, findElement {using=xpath, value=//a[normalize-space()='MCA with specialization in Blockchai']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51740/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f8e661ffe76151905af08ae56e740e8
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>6:15:48 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: Unexpected error occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='MCA with specialization in Blockchai']"}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f8e661ffe76151905af08ae56e740e8, findElement {using=xpath, value=//a[normalize-space()='MCA with specialization in Blockchai']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51740/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f8e661ffe76151905af08ae56e740e8
+	at org.testng.Assert.fail(Assert.java:111)
+	at Amity.Online2.Module2_FunctionalTesting.MCAwithspecializationinBlockchain(Module2_FunctionalTesting.java:226)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
 
+							<ul class='screenshots'>
+								<li><img width='80' height='40' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\eclipse-workspace\Online2\Screenshot\MCAwithspecializationinBlockchain_20241015181548.png' src='C:\Users\admin\eclipse-workspace\Online2\Screenshot\MCAwithspecializationinBlockchain_20241015181548.png'></li>
+							</ul>
 					</div>
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>BCAwithspecializationinDataAnalytics_Program</span>
-						<span class='test-time'>15-10-2024 00:46</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:46</span>
-	<span class='label end-time'>15-10-2024 00:46</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.250</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:46:40 AM</td>
-				<td class='step-details'>
-						BCAwithspecializationinDataAnalytics_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofBusinessAdministration_Program</span>
-						<span class='test-time'>15-10-2024 00:46</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:46</span>
-	<span class='label end-time'>15-10-2024 00:46</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.276</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:46:52 AM</td>
-				<td class='step-details'>
-						BachelorofBusinessAdministration_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsJournalismandMasscommunication_Program</span>
-						<span class='test-time'>15-10-2024 00:46</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:46</span>
-	<span class='label end-time'>15-10-2024 00:47</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 08.155</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:47:03 AM</td>
-				<td class='step-details'>
-						BachelorofArtsJournalismandMasscommunication_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofCommerce_Program</span>
-						<span class='test-time'>15-10-2024 00:47</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:47</span>
-	<span class='label end-time'>15-10-2024 00:47</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 08.917</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:47:14 AM</td>
-				<td class='step-details'>
-						BachelorofCommerce_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArts_Program</span>
-						<span class='test-time'>15-10-2024 00:47</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:47</span>
-	<span class='label end-time'>15-10-2024 00:47</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.439</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:47:26 AM</td>
-				<td class='step-details'>
-						BachelorofArts_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtKannadaMedium_Program</span>
-						<span class='test-time'>15-10-2024 00:47</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:47</span>
-	<span class='label end-time'>15-10-2024 00:47</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.232</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:47:41 AM</td>
-				<td class='step-details'>
-						BachelorofArtKannadaMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsMalayalamMedium_Program</span>
-						<span class='test-time'>15-10-2024 00:47</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:47</span>
-	<span class='label end-time'>15-10-2024 00:47</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 06.306</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:47:50 AM</td>
-				<td class='step-details'>
-						BachelorofArtsMalayalamMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsTamilMedium_Program</span>
-						<span class='test-time'>15-10-2024 00:47</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:47</span>
-	<span class='label end-time'>15-10-2024 00:48</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.631</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:48:00 AM</td>
-				<td class='step-details'>
-						BachelorofArtsTamilMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsTeluguMedium_Program</span>
-						<span class='test-time'>15-10-2024 00:48</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:48</span>
-	<span class='label end-time'>15-10-2024 00:48</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.217</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:48:09 AM</td>
-				<td class='step-details'>
-						BachelorofArtsTeluguMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorofArtsHindiMedium_Program</span>
-						<span class='test-time'>15-10-2024 00:48</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:48</span>
-	<span class='label end-time'>15-10-2024 00:48</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 06.290</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:48:19 AM</td>
-				<td class='step-details'>
-						BachelorofArtsHindiMedium_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
-					<div class='test-heading'>
-						<span class='test-name'>BComwithSpecializationinInternationalFinanceandAccounting_Program</span>
-						<span class='test-time'>15-10-2024 00:48</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:48</span>
-	<span class='label end-time'>15-10-2024 00:48</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.119</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:48:33 AM</td>
-				<td class='step-details'>
-						BComwithSpecializationinInternationalFinanceandAccounting_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>BachelorOfCommerceHonours_Program</span>
-						<span class='test-time'>15-10-2024 00:48</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:48</span>
-	<span class='label end-time'>15-10-2024 00:48</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 08.273</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:48:43 AM</td>
-				<td class='step-details'>
-						BachelorOfCommerceHonours_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
-					<div class='test-heading'>
-						<span class='test-name'>MasterofComputerApplications_Program</span>
-						<span class='test-time'>15-10-2024 00:48</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:48</span>
-	<span class='label end-time'>15-10-2024 00:48</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.256</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:48:56 AM</td>
-				<td class='step-details'>
-						MasterofComputerApplications_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
-					<div class='test-heading'>
-						<span class='test-name'>MCAwithspecializationinBlockchain_Program</span>
-						<span class='test-time'>15-10-2024 00:48</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:48</span>
-	<span class='label end-time'>15-10-2024 00:49</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.603</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>			
-				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:49:06 AM</td>
-				<td class='step-details'>
-						MCAwithspecializationinBlockchain_Program url is verified
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
-					<div class='test-heading'>
 						<span class='test-name'>MCAwithspecializationinMLandAl_Program</span>
-						<span class='test-time'>15-10-2024 00:49</span>
+						<span class='test-time'>15-10-2024 18:15</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:49</span>
-	<span class='label end-time'>15-10-2024 00:49</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.187</span>
+	<span class='label start-time'>15-10-2024 18:15</span>
+	<span class='label end-time'>15-10-2024 18:15</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 05.377</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -717,7 +330,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:49:20 AM</td>
+				<td class='timestamp'>6:15:56 PM</td>
 				<td class='step-details'>
 						MCAwithspecializationinMLandAl_Program url is verified
 				</td>
@@ -728,17 +341,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>MCAwithspecializationinMachineLearning_Program</span>
-						<span class='test-time'>15-10-2024 00:49</span>
+						<span class='test-time'>15-10-2024 18:15</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:49</span>
-	<span class='label end-time'>15-10-2024 00:49</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 03.647</span>
+	<span class='label start-time'>15-10-2024 18:15</span>
+	<span class='label end-time'>15-10-2024 18:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 04.429</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -752,7 +365,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:49:26 AM</td>
+				<td class='timestamp'>6:16:03 PM</td>
 				<td class='step-details'>
 						MCAwithspecializationinMachineLearning_Program url is verified
 				</td>
@@ -763,17 +376,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>MCAwithspecializationinARandVR_Program</span>
-						<span class='test-time'>15-10-2024 00:49</span>
+						<span class='test-time'>15-10-2024 18:16</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:49</span>
-	<span class='label end-time'>15-10-2024 00:49</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.776</span>
+	<span class='label start-time'>15-10-2024 18:16</span>
+	<span class='label end-time'>15-10-2024 18:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 04.426</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -787,7 +400,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:49:39 AM</td>
+				<td class='timestamp'>6:16:10 PM</td>
 				<td class='step-details'>
 						MCAwithspecializationinARandVR_Program url is verified
 				</td>
@@ -798,17 +411,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>MasterofBusinessAdministration_Program</span>
-						<span class='test-time'>15-10-2024 00:49</span>
+						<span class='test-time'>15-10-2024 18:16</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:49</span>
-	<span class='label end-time'>15-10-2024 00:49</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 04.671</span>
+	<span class='label start-time'>15-10-2024 18:16</span>
+	<span class='label end-time'>15-10-2024 18:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 03.969</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -822,7 +435,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:49:51 AM</td>
+				<td class='timestamp'>6:16:16 PM</td>
 				<td class='step-details'>
 						MasterofBusinessAdministration_Program url is verified
 				</td>
@@ -833,17 +446,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>MBAwithspecializationinDigitalMarketingManagement_Program</span>
-						<span class='test-time'>15-10-2024 00:49</span>
+						<span class='test-time'>15-10-2024 18:16</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:49</span>
-	<span class='label end-time'>15-10-2024 00:50</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.132</span>
+	<span class='label start-time'>15-10-2024 18:16</span>
+	<span class='label end-time'>15-10-2024 18:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 05.396</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -857,7 +470,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:50:01 AM</td>
+				<td class='timestamp'>6:16:24 PM</td>
 				<td class='step-details'>
 						MBAwithspecializationinDigitalMarketingManagement_Program url is verified
 				</td>
@@ -868,17 +481,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>MBAwithspecializationinHRAnalytics_Program</span>
-						<span class='test-time'>15-10-2024 00:50</span>
+						<span class='test-time'>15-10-2024 18:16</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:50</span>
-	<span class='label end-time'>15-10-2024 00:50</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.101</span>
+	<span class='label start-time'>15-10-2024 18:16</span>
+	<span class='label end-time'>15-10-2024 18:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 03.799</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -892,7 +505,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:50:11 AM</td>
+				<td class='timestamp'>6:16:32 PM</td>
 				<td class='step-details'>
 						MBAwithspecializationinHRAnalytics_Program url is verified
 				</td>
@@ -903,17 +516,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
 					<div class='test-heading'>
 						<span class='test-name'>MBAwithspecializationinDataScience_Program</span>
-						<span class='test-time'>15-10-2024 00:50</span>
+						<span class='test-time'>15-10-2024 18:16</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:50</span>
-	<span class='label end-time'>15-10-2024 00:50</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.135</span>
+	<span class='label start-time'>15-10-2024 18:16</span>
+	<span class='label end-time'>15-10-2024 18:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 03.770</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -927,7 +540,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:50:21 AM</td>
+				<td class='timestamp'>6:16:38 PM</td>
 				<td class='step-details'>
 						MBAwithspecializationinDataScience_Program url is verified
 				</td>
@@ -938,17 +551,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
 					<div class='test-heading'>
 						<span class='test-name'>MBAwithspecializationinBusinessAnalytics_Program</span>
-						<span class='test-time'>15-10-2024 00:50</span>
+						<span class='test-time'>15-10-2024 18:16</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:50</span>
-	<span class='label end-time'>15-10-2024 00:50</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 04.366</span>
+	<span class='label start-time'>15-10-2024 18:16</span>
+	<span class='label end-time'>15-10-2024 18:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 07.077</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -962,7 +575,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:50:34 AM</td>
+				<td class='timestamp'>6:16:48 PM</td>
 				<td class='step-details'>
 						MBAwithspecializationinBusinessAnalytics_Program url is verified
 				</td>
@@ -973,17 +586,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
 					<div class='test-heading'>
 						<span class='test-name'>MBAwithspecializationinDigitalEntrepreneurship_Program</span>
-						<span class='test-time'>15-10-2024 00:50</span>
+						<span class='test-time'>15-10-2024 18:16</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:50</span>
-	<span class='label end-time'>15-10-2024 00:50</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 06.972</span>
+	<span class='label start-time'>15-10-2024 18:16</span>
+	<span class='label end-time'>15-10-2024 18:16</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 07.409</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -997,7 +610,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:50:44 AM</td>
+				<td class='timestamp'>6:16:57 PM</td>
 				<td class='step-details'>
 						MBAwithspecializationinDigitalEntrepreneurship_Program url is verified
 				</td>
@@ -1008,17 +621,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
 					<div class='test-heading'>
 						<span class='test-name'>MasterofArtsJournalismandMasscommunication_Program</span>
-						<span class='test-time'>15-10-2024 00:50</span>
+						<span class='test-time'>15-10-2024 18:17</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:50</span>
-	<span class='label end-time'>15-10-2024 00:50</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.251</span>
+	<span class='label start-time'>15-10-2024 18:17</span>
+	<span class='label end-time'>15-10-2024 18:17</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 03.641</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -1032,7 +645,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:50:56 AM</td>
+				<td class='timestamp'>6:17:05 PM</td>
 				<td class='step-details'>
 						MasterofArtsJournalismandMasscommunication_Program url is verified
 				</td>
@@ -1043,17 +656,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
 					<div class='test-heading'>
 						<span class='test-name'>MComwithspecializationinFintech_Program</span>
-						<span class='test-time'>15-10-2024 00:50</span>
+						<span class='test-time'>15-10-2024 18:17</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:50</span>
-	<span class='label end-time'>15-10-2024 00:51</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 06.736</span>
+	<span class='label start-time'>15-10-2024 18:17</span>
+	<span class='label end-time'>15-10-2024 18:17</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 04.683</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -1067,7 +680,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:51:06 AM</td>
+				<td class='timestamp'>6:17:12 PM</td>
 				<td class='step-details'>
 						MComwithspecializationinFintech_Program url is verified
 				</td>
@@ -1078,17 +691,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
 					<div class='test-heading'>
 						<span class='test-name'>MComwithspecializationinFinancialManagement_Program</span>
-						<span class='test-time'>15-10-2024 00:51</span>
+						<span class='test-time'>15-10-2024 18:17</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:51</span>
-	<span class='label end-time'>15-10-2024 00:51</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 07.818</span>
+	<span class='label start-time'>15-10-2024 18:17</span>
+	<span class='label end-time'>15-10-2024 18:17</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 05.781</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -1102,7 +715,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:51:20 AM</td>
+				<td class='timestamp'>6:17:20 PM</td>
 				<td class='step-details'>
 						MComwithspecializationinFinancialManagement_Program url is verified
 				</td>
@@ -1113,17 +726,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
 					<div class='test-heading'>
 						<span class='test-name'>MasterofArtsinPublicPolicyandGovernance_Program</span>
-						<span class='test-time'>15-10-2024 00:51</span>
+						<span class='test-time'>15-10-2024 18:17</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:51</span>
-	<span class='label end-time'>15-10-2024 00:51</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.198</span>
+	<span class='label start-time'>15-10-2024 18:17</span>
+	<span class='label end-time'>15-10-2024 18:17</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 04.850</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -1137,7 +750,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:51:32 AM</td>
+				<td class='timestamp'>6:17:28 PM</td>
 				<td class='step-details'>
 						MasterofArtsinPublicPolicyandGovernance_Program url is verified
 				</td>
@@ -1148,17 +761,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
 					<div class='test-heading'>
 						<span class='test-name'>MasterofArtsinPsychology_Program</span>
-						<span class='test-time'>15-10-2024 00:51</span>
+						<span class='test-time'>15-10-2024 18:17</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:51</span>
-	<span class='label end-time'>15-10-2024 00:51</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 05.162</span>
+	<span class='label start-time'>15-10-2024 18:17</span>
+	<span class='label end-time'>15-10-2024 18:17</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 03.686</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -1172,7 +785,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:51:45 AM</td>
+				<td class='timestamp'>6:17:34 PM</td>
 				<td class='step-details'>
 						MasterofArtsinPsychology_Program url is verified
 				</td>
@@ -1183,17 +796,17 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
 					<div class='test-heading'>
 						<span class='test-name'>MasterofScienceinDataScience_Program</span>
-						<span class='test-time'>15-10-2024 00:51</span>
+						<span class='test-time'>15-10-2024 18:17</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:51</span>
-	<span class='label end-time'>15-10-2024 00:51</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 08.414</span>
+	<span class='label start-time'>15-10-2024 18:17</span>
+	<span class='label end-time'>15-10-2024 18:17</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 05.018</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -1207,7 +820,7 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>12:51:57 AM</td>
+				<td class='timestamp'>6:17:42 PM</td>
 				<td class='step-details'>
 						MasterofScienceinDataScience_Program url is verified
 				</td>
@@ -1218,16 +831,16 @@
 
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
 					<div class='test-heading'>
 						<span class='test-name'>Program List on HomePage</span>
-						<span class='test-time'>15-10-2024 00:52</span>
+						<span class='test-time'>15-10-2024 18:17</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>15-10-2024 00:52</span>
-	<span class='label end-time'>15-10-2024 00:52</span>
+	<span class='label start-time'>15-10-2024 18:17</span>
+	<span class='label end-time'>15-10-2024 18:17</span>
 	<span class='label time-taken grey lighten-1 white-text'>00 00 00.000</span>
 </div>
 					</div>
@@ -1254,7 +867,127 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>15-10-2024 18:15</td>
+										<td class='linked' test-id='1'>MasterofComputerApplications_Program</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: Assertion error occurred: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at Amity.Online2.Module2_FunctionalTesting.MasterofComputerApplications(Module2_FunctionalTesting.java:188)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>15-10-2024 18:15</td>
+										<td class='linked' test-id='2'>MCAwithspecializationinBlockchain_Program</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: Assertion error occurred: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at Amity.Online2.Module2_FunctionalTesting.MasterofComputerApplications(Module2_FunctionalTesting.java:188)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -1262,7 +995,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>32</div>
+					<div class='panel-lead'>18</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -1274,19 +1007,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>15-10-2024 00:46</div>
+					<div class='panel-lead'>15-10-2024 18:15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>15-10-2024 00:52</div>
+			 		<div class='panel-lead'>15-10-2024 18:17</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 05 57.949</div>
+					<div class='panel-lead'>00 02 14.129</div>
 				</div>
 			</div>
 		</div>
@@ -1297,9 +1030,9 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 32,
-				passParent: 32,
-				failParent: 0,
+                parentCount: 18,
+				passParent: 16,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
@@ -1325,7 +1058,7 @@
 		
 		<script>
 			var timeline = {
-			        "BachelorofComputerApplications_Program":5.039,"BCAwithspecializationinCloudandSecurity_Program":7.146,"BCAwithspecializationinDataAnalytics_Program":7.25,"BachelorofBusinessAdministration_Program":5.276,"BachelorofArtsJournalismandMasscommunication_Program":8.155,"BachelorofCommerce_Program":8.917,"BachelorofArts_Program":5.439,"BachelorofArtKannadaMedium_Program":7.232,"BachelorofArtsMalayalamMedium_Program":6.306,"BachelorofArtsTamilMedium_Program":7.631,"BachelorofArtsTeluguMedium_Program":7.217,"BachelorofArtsHindiMedium_Program":6.29,"BComwithSpecializationinInternationalFinanceandAccounting_Program":7.119,"BachelorOfCommerceHonours_Program":8.273,"MasterofComputerApplications_Program":5.256,"MCAwithspecializationinBlockchain_Program":7.603,"MCAwithspecializationinMLandAl_Program":5.187,"MCAwithspecializationinMachineLearning_Program":3.647,"MCAwithspecializationinARandVR_Program":5.776,"MasterofBusinessAdministration_Program":4.671,"MBAwithspecializationinDigitalMarketingManagement_Program":5.132,"MBAwithspecializationinHRAnalytics_Program":7.101,"MBAwithspecializationinDataScience_Program":7.135,"MBAwithspecializationinBusinessAnalytics_Program":4.366,"MBAwithspecializationinDigitalEntrepreneurship_Program":6.972,"MasterofArtsJournalismandMasscommunication_Program":5.251,"MComwithspecializationinFintech_Program":6.736,"MComwithspecializationinFinancialManagement_Program":7.818,"MasterofArtsinPublicPolicyandGovernance_Program":5.198,"MasterofArtsinPsychology_Program":5.162,"MasterofScienceinDataScience_Program":8.414,"Program List on HomePage":0
+			        "MasterofComputerApplications_Program":4.185,"MCAwithspecializationinBlockchain_Program":0.559,"MCAwithspecializationinMLandAl_Program":5.377,"MCAwithspecializationinMachineLearning_Program":4.429,"MCAwithspecializationinARandVR_Program":4.426,"MasterofBusinessAdministration_Program":3.969,"MBAwithspecializationinDigitalMarketingManagement_Program":5.396,"MBAwithspecializationinHRAnalytics_Program":3.799,"MBAwithspecializationinDataScience_Program":3.77,"MBAwithspecializationinBusinessAnalytics_Program":7.077,"MBAwithspecializationinDigitalEntrepreneurship_Program":7.409,"MasterofArtsJournalismandMasscommunication_Program":3.641,"MComwithspecializationinFintech_Program":4.683,"MComwithspecializationinFinancialManagement_Program":5.781,"MasterofArtsinPublicPolicyandGovernance_Program":4.85,"MasterofArtsinPsychology_Program":3.686,"MasterofScienceinDataScience_Program":5.018,"Program List on HomePage":0
 			};
 		</script>
 		

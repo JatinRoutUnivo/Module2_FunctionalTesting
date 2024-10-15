@@ -7,10 +7,9 @@
         <methods>
           <include name="GenerateReport"/>
           <include name="LaunchBrowser"/>
-          <include name="BCAwithspecializationinDataAnalytics"/>
-          <include name="BachelorofBusinessAdministration"/>
+          <include name="MCAwithspecializationinBlockchain"/>
+          <include name="MasterofComputerApplications"/>
           <include name="CloseBrowser"/>
-          <include name="BachelorofComputerApplications"/>
           <include name="CloseReport"/>
         </methods>
       </class> <!-- Amity.Online2.Module2_FunctionalTesting -->
