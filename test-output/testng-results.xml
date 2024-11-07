@@ -1,465 +1,359 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-16T00:32:09 IST" name="Default suite" finished-at="2024-10-16T00:35:37 IST" duration-ms="207323">
+  <suite started-at="2024-11-07T15:39:31 IST" name="Default suite" finished-at="2024-11-07T15:41:20 IST" duration-ms="109139">
     <groups>
     </groups>
-    <test started-at="2024-10-16T00:32:09 IST" name="Default test" finished-at="2024-10-16T00:35:37 IST" duration-ms="207323">
+    <test started-at="2024-11-07T15:39:31 IST" name="Default test" finished-at="2024-11-07T15:41:20 IST" duration-ms="109139">
       <class name="Amity.Online2.Module2_FunctionalTesting">
-        <test-method is-config="true" signature="GenerateReport()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:09 IST" name="GenerateReport" finished-at="2024-10-16T00:32:10 IST" duration-ms="655" status="PASS">
+        <test-method is-config="true" signature="GenerateReport()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:31 IST" name="GenerateReport" finished-at="2024-11-07T15:39:31 IST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GenerateReport -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:10 IST" name="LaunchBrowser" finished-at="2024-10-16T00:32:19 IST" duration-ms="8853" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:31 IST" name="LaunchBrowser" finished-at="2024-11-07T15:39:34 IST" duration-ms="2584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MasterofComputerApplications()[pri:15, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:19 IST" name="MasterofComputerApplications" finished-at="2024-10-16T00:32:19 IST" duration-ms="333" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Unexpected error occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Master of Computer Application']"}
-  (Session info: chrome=129.0.6668.101)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a69efe589f969c04531cc7b0ef80f0c, findElement {using=xpath, value=//a[normalize-space()='Master of Computer Application']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59282}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59282/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a69efe589f969c04531cc7b0ef80f0c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Unexpected error occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Master of Computer Application']"}
-  (Session info: chrome=129.0.6668.101)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a69efe589f969c04531cc7b0ef80f0c, findElement {using=xpath, value=//a[normalize-space()='Master of Computer Application']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59282}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59282/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a69efe589f969c04531cc7b0ef80f0c
-at org.testng.Assert.fail(Assert.java:111)
-at Amity.Online2.Module2_FunctionalTesting.MasterofComputerApplications(Module2_FunctionalTesting.java:184)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="MasterofComputerApplications()[pri:15, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:34 IST" name="MasterofComputerApplications" finished-at="2024-11-07T15:39:38 IST" duration-ms="3753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MasterofComputerApplications -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:19 IST" name="CloseBrowser" finished-at="2024-10-16T00:32:20 IST" duration-ms="936" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:38 IST" name="CloseBrowser" finished-at="2024-11-07T15:39:38 IST" duration-ms="223" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MasterofComputerApplications status=FAILURE method=Module2_FunctionalTesting.MasterofComputerApplications()[pri:15, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MasterofComputerApplications status=SUCCESS method=Module2_FunctionalTesting.MasterofComputerApplications()[pri:15, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:20 IST" name="LaunchBrowser" finished-at="2024-10-16T00:32:23 IST" duration-ms="3082" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:38 IST" name="LaunchBrowser" finished-at="2024-11-07T15:39:39 IST" duration-ms="1434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MCAwithspecializationinBlockchain()[pri:16, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:23 IST" name="MCAwithspecializationinBlockchain" finished-at="2024-10-16T00:32:24 IST" duration-ms="467" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Unexpected error occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='MCA with specialization in Blockchai']"}
-  (Session info: chrome=129.0.6668.101)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9c1e34cea704f5ae360de05c04f9719, findElement {using=xpath, value=//a[normalize-space()='MCA with specialization in Blockchai']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59307}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59307/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9c1e34cea704f5ae360de05c04f9719]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Unexpected error occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='MCA with specialization in Blockchai']"}
-  (Session info: chrome=129.0.6668.101)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9c1e34cea704f5ae360de05c04f9719, findElement {using=xpath, value=//a[normalize-space()='MCA with specialization in Blockchai']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59307}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59307/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9c1e34cea704f5ae360de05c04f9719
-at org.testng.Assert.fail(Assert.java:111)
-at Amity.Online2.Module2_FunctionalTesting.MCAwithspecializationinBlockchain(Module2_FunctionalTesting.java:226)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="MCAwithspecializationinBlockchain()[pri:16, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:39 IST" name="MCAwithspecializationinBlockchain" finished-at="2024-11-07T15:39:43 IST" duration-ms="3825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MCAwithspecializationinBlockchain -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:24 IST" name="CloseBrowser" finished-at="2024-10-16T00:32:25 IST" duration-ms="884" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:43 IST" name="CloseBrowser" finished-at="2024-11-07T15:39:43 IST" duration-ms="228" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MCAwithspecializationinBlockchain status=FAILURE method=Module2_FunctionalTesting.MCAwithspecializationinBlockchain()[pri:16, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MCAwithspecializationinBlockchain status=SUCCESS method=Module2_FunctionalTesting.MCAwithspecializationinBlockchain()[pri:16, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:25 IST" name="LaunchBrowser" finished-at="2024-10-16T00:32:32 IST" duration-ms="7637" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:43 IST" name="LaunchBrowser" finished-at="2024-11-07T15:39:45 IST" duration-ms="1562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MCAwithspecializationinMLandAl()[pri:17, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:32 IST" name="MCAwithspecializationinMLandAl" finished-at="2024-10-16T00:32:38 IST" duration-ms="6108" status="PASS">
+        <test-method signature="MCAwithspecializationinMLandAl()[pri:17, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:45 IST" name="MCAwithspecializationinMLandAl" finished-at="2024-11-07T15:39:50 IST" duration-ms="5180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MCAwithspecializationinMLandAl -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:39 IST" name="CloseBrowser" finished-at="2024-10-16T00:32:39 IST" duration-ms="382" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:50 IST" name="CloseBrowser" finished-at="2024-11-07T15:39:50 IST" duration-ms="238" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MCAwithspecializationinMLandAl status=SUCCESS method=Module2_FunctionalTesting.MCAwithspecializationinMLandAl()[pri:17, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MCAwithspecializationinMLandAl status=SUCCESS method=Module2_FunctionalTesting.MCAwithspecializationinMLandAl()[pri:17, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:39 IST" name="LaunchBrowser" finished-at="2024-10-16T00:32:42 IST" duration-ms="3517" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:50 IST" name="LaunchBrowser" finished-at="2024-11-07T15:39:52 IST" duration-ms="1541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MCAwithspecializationinMachineLearning()[pri:18, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:42 IST" name="MCAwithspecializationinMachineLearning" finished-at="2024-10-16T00:32:51 IST" duration-ms="8485" status="PASS">
+        <test-method signature="MCAwithspecializationinMachineLearning()[pri:18, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:52 IST" name="MCAwithspecializationinMachineLearning" finished-at="2024-11-07T15:39:56 IST" duration-ms="3714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MCAwithspecializationinMachineLearning -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:51 IST" name="CloseBrowser" finished-at="2024-10-16T00:32:51 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:56 IST" name="CloseBrowser" finished-at="2024-11-07T15:39:56 IST" duration-ms="215" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MCAwithspecializationinMachineLearning status=SUCCESS method=Module2_FunctionalTesting.MCAwithspecializationinMachineLearning()[pri:18, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MCAwithspecializationinMachineLearning status=SUCCESS method=Module2_FunctionalTesting.MCAwithspecializationinMachineLearning()[pri:18, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:51 IST" name="LaunchBrowser" finished-at="2024-10-16T00:32:54 IST" duration-ms="3282" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:56 IST" name="LaunchBrowser" finished-at="2024-11-07T15:39:57 IST" duration-ms="1411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MCAwithspecializationinARandVR()[pri:19, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:32:54 IST" name="MCAwithspecializationinARandVR" finished-at="2024-10-16T00:33:02 IST" duration-ms="8001" status="PASS">
+        <test-method signature="MCAwithspecializationinARandVR()[pri:19, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:39:57 IST" name="MCAwithspecializationinARandVR" finished-at="2024-11-07T15:40:01 IST" duration-ms="3715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MCAwithspecializationinARandVR -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:02 IST" name="CloseBrowser" finished-at="2024-10-16T00:33:03 IST" duration-ms="517" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:01 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:01 IST" duration-ms="231" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MCAwithspecializationinARandVR status=SUCCESS method=Module2_FunctionalTesting.MCAwithspecializationinARandVR()[pri:19, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MCAwithspecializationinARandVR status=SUCCESS method=Module2_FunctionalTesting.MCAwithspecializationinARandVR()[pri:19, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:03 IST" name="LaunchBrowser" finished-at="2024-10-16T00:33:07 IST" duration-ms="3630" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:01 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:03 IST" duration-ms="1381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MasterofBusinessAdministration()[pri:20, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:07 IST" name="MasterofBusinessAdministration" finished-at="2024-10-16T00:33:11 IST" duration-ms="4070" status="PASS">
+        <test-method signature="MasterofBusinessAdministration()[pri:20, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:03 IST" name="MasterofBusinessAdministration" finished-at="2024-11-07T15:40:06 IST" duration-ms="3711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MasterofBusinessAdministration -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:11 IST" name="CloseBrowser" finished-at="2024-10-16T00:33:11 IST" duration-ms="298" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:06 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:07 IST" duration-ms="193" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MasterofBusinessAdministration status=SUCCESS method=Module2_FunctionalTesting.MasterofBusinessAdministration()[pri:20, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MasterofBusinessAdministration status=SUCCESS method=Module2_FunctionalTesting.MasterofBusinessAdministration()[pri:20, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:11 IST" name="LaunchBrowser" finished-at="2024-10-16T00:33:14 IST" duration-ms="3164" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:07 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:08 IST" duration-ms="1404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MBAwithspecializationinDigitalMarketingManagement()[pri:21, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:14 IST" name="MBAwithspecializationinDigitalMarketingManagement" finished-at="2024-10-16T00:33:23 IST" duration-ms="8993" status="PASS">
+        <test-method signature="MBAwithspecializationinDigitalMarketingManagement()[pri:21, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:08 IST" name="MBAwithspecializationinDigitalMarketingManagement" finished-at="2024-11-07T15:40:12 IST" duration-ms="3794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MBAwithspecializationinDigitalMarketingManagement -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:23 IST" name="CloseBrowser" finished-at="2024-10-16T00:33:24 IST" duration-ms="363" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:12 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:12 IST" duration-ms="185" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MBAwithspecializationinDigitalMarketingManagement status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinDigitalMarketingManagement()[pri:21, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MBAwithspecializationinDigitalMarketingManagement status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinDigitalMarketingManagement()[pri:21, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:24 IST" name="LaunchBrowser" finished-at="2024-10-16T00:33:27 IST" duration-ms="3692" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:12 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:13 IST" duration-ms="1518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MBAwithspecializationinHRAnalytics()[pri:22, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:27 IST" name="MBAwithspecializationinHRAnalytics" finished-at="2024-10-16T00:33:32 IST" duration-ms="4438" status="PASS">
+        <test-method signature="MBAwithspecializationinHRAnalytics()[pri:22, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:13 IST" name="MBAwithspecializationinHRAnalytics" finished-at="2024-11-07T15:40:18 IST" duration-ms="4368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MBAwithspecializationinHRAnalytics -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:32 IST" name="CloseBrowser" finished-at="2024-10-16T00:33:32 IST" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:18 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:18 IST" duration-ms="176" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MBAwithspecializationinHRAnalytics status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinHRAnalytics()[pri:22, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MBAwithspecializationinHRAnalytics status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinHRAnalytics()[pri:22, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:32 IST" name="LaunchBrowser" finished-at="2024-10-16T00:33:36 IST" duration-ms="3940" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:18 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:19 IST" duration-ms="1370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MBAwithspecializationinDataScience()[pri:23, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:36 IST" name="MBAwithspecializationinDataScience" finished-at="2024-10-16T00:33:41 IST" duration-ms="4503" status="PASS">
+        <test-method signature="MBAwithspecializationinDataScience()[pri:23, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:19 IST" name="MBAwithspecializationinDataScience" finished-at="2024-11-07T15:40:23 IST" duration-ms="3769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MBAwithspecializationinDataScience -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:41 IST" name="CloseBrowser" finished-at="2024-10-16T00:33:41 IST" duration-ms="294" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:23 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:23 IST" duration-ms="225" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MBAwithspecializationinDataScience status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinDataScience()[pri:23, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MBAwithspecializationinDataScience status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinDataScience()[pri:23, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:41 IST" name="LaunchBrowser" finished-at="2024-10-16T00:33:44 IST" duration-ms="3365" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:23 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:25 IST" duration-ms="1469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MBAwithspecializationinBusinessAnalytics()[pri:24, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:44 IST" name="MBAwithspecializationinBusinessAnalytics" finished-at="2024-10-16T00:33:54 IST" duration-ms="9554" status="PASS">
+        <test-method signature="MBAwithspecializationinBusinessAnalytics()[pri:24, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:25 IST" name="MBAwithspecializationinBusinessAnalytics" finished-at="2024-11-07T15:40:29 IST" duration-ms="3773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MBAwithspecializationinBusinessAnalytics -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:54 IST" name="CloseBrowser" finished-at="2024-10-16T00:33:55 IST" duration-ms="1185" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:29 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:29 IST" duration-ms="200" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MBAwithspecializationinBusinessAnalytics status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinBusinessAnalytics()[pri:24, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MBAwithspecializationinBusinessAnalytics status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinBusinessAnalytics()[pri:24, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:55 IST" name="LaunchBrowser" finished-at="2024-10-16T00:33:58 IST" duration-ms="3246" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:29 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:30 IST" duration-ms="1399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MBAwithspecializationinDigitalEntrepreneurship()[pri:25, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:33:58 IST" name="MBAwithspecializationinDigitalEntrepreneurship" finished-at="2024-10-16T00:34:07 IST" duration-ms="8320" status="PASS">
+        <test-method signature="MBAwithspecializationinDigitalEntrepreneurship()[pri:25, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:30 IST" name="MBAwithspecializationinDigitalEntrepreneurship" finished-at="2024-11-07T15:40:34 IST" duration-ms="3942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MBAwithspecializationinDigitalEntrepreneurship -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:07 IST" name="CloseBrowser" finished-at="2024-10-16T00:34:07 IST" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:34 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:34 IST" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MBAwithspecializationinDigitalEntrepreneurship status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinDigitalEntrepreneurship()[pri:25, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MBAwithspecializationinDigitalEntrepreneurship status=SUCCESS method=Module2_FunctionalTesting.MBAwithspecializationinDigitalEntrepreneurship()[pri:25, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:07 IST" name="LaunchBrowser" finished-at="2024-10-16T00:34:10 IST" duration-ms="3309" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:34 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:36 IST" duration-ms="1922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MasterofArtsJournalismandMasscommunication()[pri:26, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:10 IST" name="MasterofArtsJournalismandMasscommunication" finished-at="2024-10-16T00:34:17 IST" duration-ms="6461" status="PASS">
+        <test-method signature="MasterofArtsJournalismandMasscommunication()[pri:26, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:36 IST" name="MasterofArtsJournalismandMasscommunication" finished-at="2024-11-07T15:40:40 IST" duration-ms="3875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MasterofArtsJournalismandMasscommunication -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:17 IST" name="CloseBrowser" finished-at="2024-10-16T00:34:17 IST" duration-ms="350" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:40 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:41 IST" duration-ms="630" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MasterofArtsJournalismandMasscommunication status=SUCCESS method=Module2_FunctionalTesting.MasterofArtsJournalismandMasscommunication()[pri:26, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MasterofArtsJournalismandMasscommunication status=SUCCESS method=Module2_FunctionalTesting.MasterofArtsJournalismandMasscommunication()[pri:26, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:17 IST" name="LaunchBrowser" finished-at="2024-10-16T00:34:20 IST" duration-ms="3081" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:41 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:42 IST" duration-ms="1636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MComwithspecializationinFintech()[pri:27, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:20 IST" name="MComwithspecializationinFintech" finished-at="2024-10-16T00:34:29 IST" duration-ms="8793" status="PASS">
+        <test-method signature="MComwithspecializationinFintech()[pri:27, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:42 IST" name="MComwithspecializationinFintech" finished-at="2024-11-07T15:40:47 IST" duration-ms="4626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MComwithspecializationinFintech -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:29 IST" name="CloseBrowser" finished-at="2024-10-16T00:34:29 IST" duration-ms="372" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:47 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:47 IST" duration-ms="191" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MComwithspecializationinFintech status=SUCCESS method=Module2_FunctionalTesting.MComwithspecializationinFintech()[pri:27, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MComwithspecializationinFintech status=SUCCESS method=Module2_FunctionalTesting.MComwithspecializationinFintech()[pri:27, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:29 IST" name="LaunchBrowser" finished-at="2024-10-16T00:34:33 IST" duration-ms="3332" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:47 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:49 IST" duration-ms="1685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MComwithspecializationinFinancialManagement()[pri:28, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:33 IST" name="MComwithspecializationinFinancialManagement" finished-at="2024-10-16T00:34:41 IST" duration-ms="8140" status="PASS">
+        <test-method signature="MComwithspecializationinFinancialManagement()[pri:28, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:49 IST" name="MComwithspecializationinFinancialManagement" finished-at="2024-11-07T15:40:53 IST" duration-ms="3750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MComwithspecializationinFinancialManagement -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:41 IST" name="CloseBrowser" finished-at="2024-10-16T00:34:41 IST" duration-ms="400" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:53 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:53 IST" duration-ms="187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MComwithspecializationinFinancialManagement status=SUCCESS method=Module2_FunctionalTesting.MComwithspecializationinFinancialManagement()[pri:28, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MComwithspecializationinFinancialManagement status=SUCCESS method=Module2_FunctionalTesting.MComwithspecializationinFinancialManagement()[pri:28, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:41 IST" name="LaunchBrowser" finished-at="2024-10-16T00:34:50 IST" duration-ms="8531" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:53 IST" name="LaunchBrowser" finished-at="2024-11-07T15:40:55 IST" duration-ms="1592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MasterofArtsinPublicPolicyandGovernance()[pri:29, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:50 IST" name="MasterofArtsinPublicPolicyandGovernance" finished-at="2024-10-16T00:34:55 IST" duration-ms="5706" status="PASS">
+        <test-method signature="MasterofArtsinPublicPolicyandGovernance()[pri:29, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:55 IST" name="MasterofArtsinPublicPolicyandGovernance" finished-at="2024-11-07T15:40:58 IST" duration-ms="3762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MasterofArtsinPublicPolicyandGovernance -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:55 IST" name="CloseBrowser" finished-at="2024-10-16T00:34:56 IST" duration-ms="409" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:58 IST" name="CloseBrowser" finished-at="2024-11-07T15:40:59 IST" duration-ms="245" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MasterofArtsinPublicPolicyandGovernance status=SUCCESS method=Module2_FunctionalTesting.MasterofArtsinPublicPolicyandGovernance()[pri:29, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MasterofArtsinPublicPolicyandGovernance status=SUCCESS method=Module2_FunctionalTesting.MasterofArtsinPublicPolicyandGovernance()[pri:29, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:34:56 IST" name="LaunchBrowser" finished-at="2024-10-16T00:35:03 IST" duration-ms="7507" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:40:59 IST" name="LaunchBrowser" finished-at="2024-11-07T15:41:00 IST" duration-ms="1695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MasterofArtsinPsychology()[pri:30, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:35:03 IST" name="MasterofArtsinPsychology" finished-at="2024-10-16T00:35:09 IST" duration-ms="5467" status="PASS">
+        <test-method signature="MasterofArtsinPsychology()[pri:30, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:41:00 IST" name="MasterofArtsinPsychology" finished-at="2024-11-07T15:41:04 IST" duration-ms="3865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MasterofArtsinPsychology -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:35:09 IST" name="CloseBrowser" finished-at="2024-10-16T00:35:09 IST" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:41:04 IST" name="CloseBrowser" finished-at="2024-11-07T15:41:04 IST" duration-ms="250" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MasterofArtsinPsychology status=SUCCESS method=Module2_FunctionalTesting.MasterofArtsinPsychology()[pri:30, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MasterofArtsinPsychology status=SUCCESS method=Module2_FunctionalTesting.MasterofArtsinPsychology()[pri:30, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:35:09 IST" name="LaunchBrowser" finished-at="2024-10-16T00:35:13 IST" duration-ms="3764" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:41:04 IST" name="LaunchBrowser" finished-at="2024-11-07T15:41:06 IST" duration-ms="1487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MasterofScienceinDataScience()[pri:31, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:35:13 IST" name="MasterofScienceinDataScience" finished-at="2024-10-16T00:35:19 IST" duration-ms="5982" status="PASS">
+        <test-method signature="MasterofScienceinDataScience()[pri:31, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:41:06 IST" name="MasterofScienceinDataScience" finished-at="2024-11-07T15:41:10 IST" duration-ms="4035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MasterofScienceinDataScience -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:35:19 IST" name="CloseBrowser" finished-at="2024-10-16T00:35:20 IST" duration-ms="1183" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:41:10 IST" name="CloseBrowser" finished-at="2024-11-07T15:41:10 IST" duration-ms="211" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MasterofScienceinDataScience status=SUCCESS method=Module2_FunctionalTesting.MasterofScienceinDataScience()[pri:31, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=MasterofScienceinDataScience status=SUCCESS method=Module2_FunctionalTesting.MasterofScienceinDataScience()[pri:31, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:35:20 IST" name="LaunchBrowser" finished-at="2024-10-16T00:35:28 IST" duration-ms="8089" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:41:10 IST" name="LaunchBrowser" finished-at="2024-11-07T15:41:13 IST" duration-ms="3079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="PrintprogramsList()[pri:32, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:35:28 IST" name="PrintprogramsList" finished-at="2024-10-16T00:35:35 IST" duration-ms="6901" status="PASS">
+        <test-method signature="PrintprogramsList()[pri:32, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:41:13 IST" name="PrintprogramsList" finished-at="2024-11-07T15:41:20 IST" duration-ms="6602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrintprogramsList -->
-        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:35:35 IST" name="CloseBrowser" finished-at="2024-10-16T00:35:36 IST" duration-ms="1278" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser(org.testng.ITestResult)[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:41:20 IST" name="CloseBrowser" finished-at="2024-11-07T15:41:20 IST" duration-ms="246" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PrintprogramsList status=SUCCESS method=Module2_FunctionalTesting.PrintprogramsList()[pri:32, instance:Amity.Online2.Module2_FunctionalTesting@126253fd] output={null}]]]>
+                <![CDATA[[TestResult name=PrintprogramsList status=SUCCESS method=Module2_FunctionalTesting.PrintprogramsList()[pri:32, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="CloseReport()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@126253fd]" started-at="2024-10-16T00:35:36 IST" name="CloseReport" finished-at="2024-10-16T00:35:37 IST" duration-ms="479" status="PASS">
+        <test-method is-config="true" signature="CloseReport()[pri:0, instance:Amity.Online2.Module2_FunctionalTesting@57db2b13]" started-at="2024-11-07T15:41:20 IST" name="CloseReport" finished-at="2024-11-07T15:41:20 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseReport -->
